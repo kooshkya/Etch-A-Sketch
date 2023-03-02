@@ -1,3 +1,25 @@
+:root {
+    --svg-button-fill-light: rgb(0, 255, 34);
+    --svg-button-stroke-light: black;
+}
+
 header {
     display: flex;
+}
+
+.svg-button {
+    margin: 0 10px;
+}
+.svg-button:hover {
+    cursor: pointer;
+}
+
+svg {
+    width: 100px;
+}
+#new-project-button {
+    fill: var(--svg-button-fill-light);
+}
+#save-project-button {
+    stroke: var(--svg-button-stroke-light);
 }
