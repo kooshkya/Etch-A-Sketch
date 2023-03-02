@@ -43,3 +43,8 @@ svg {
 #stage {
     display: flex;
 }
+
+#tool-list {
+    display: flex;
+    flex-direction: column;
+}
