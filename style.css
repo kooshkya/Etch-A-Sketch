@@ -1,5 +1,5 @@
 :root {
-    --svg-button-fill-light: rgb(0, 255, 34);
+    --svg-button-fill-light: rgb(0, 0, 0);
     --svg-button-stroke-light: black;
 }
 
@@ -15,7 +15,7 @@ header {
 }
 
 svg {
-    width: 100px;
+    width: 80px;
 }
 #new-project-button {
     fill: var(--svg-button-fill-light);
