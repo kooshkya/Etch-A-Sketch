@@ -48,3 +48,11 @@ svg {
     display: flex;
     flex-direction: column;
 }
+
+.tool {
+    margin: 10px 10px;
+}
+
+#rainbow-pen-tool svg {
+    fill: url("#Gradient0");
+}
