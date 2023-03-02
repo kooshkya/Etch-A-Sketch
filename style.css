@@ -1,21 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 :root {
     --svg-button-fill-light: rgb(0, 0, 0);
     --svg-button-stroke-light: black;
 }
 
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(170, 170, 170);
+}
+
+header h1 {
+    flex-grow: 1;
+
+    font-family: Lobster, cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
 }
 
 .svg-button {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 .svg-button:hover {
     cursor: pointer;
 }
 
 svg {
-    width: 80px;
+    width: 70px;
 }
 #new-project-button {
     fill: var(--svg-button-fill-light);
