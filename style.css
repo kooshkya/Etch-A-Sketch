@@ -27,6 +27,8 @@ header h1 {
 
 .svg-button {
     margin: 0 15px;
+    fill: var(--svg-button-fill-light);
+    stroke: var(--svg-button-stroke-light);
 }
 .svg-button:hover {
     cursor: pointer;
@@ -34,10 +36,4 @@ header h1 {
 
 svg {
     width: 70px;
-}
-#new-project-button {
-    fill: var(--svg-button-fill-light);
-}
-#save-project-button {
-    stroke: var(--svg-button-stroke-light);
 }
