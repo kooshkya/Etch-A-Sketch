@@ -56,13 +56,15 @@ svg {
     flex-grow: 1;
 
     display: flex;
+    padding: 0 2em;
 }
 
 #tool-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 2em;
 }
 
 .tool {
@@ -74,13 +76,23 @@ svg {
 }
 
 
+#color-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 1em;
+    padding-top: 2em;
+}
+
 .color-picker {
     visibility: hidden;
 }
 .color-picker-label {
     display: block;
+    margin: 1em 0;
     height: 64px;
     width: 64px;
     border-radius: 100%;
-    border: 3px solid black;
+    border: 1px solid black;
 }
