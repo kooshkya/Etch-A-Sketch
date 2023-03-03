@@ -72,3 +72,15 @@ svg {
 #rainbow-pen-tool svg {
     fill: url("#Gradient0");
 }
+
+
+.color-picker {
+    visibility: hidden;
+}
+.color-picker-label {
+    display: block;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    border: 3px solid black;
+}

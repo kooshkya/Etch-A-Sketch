@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -143,11 +143,12 @@
                     <path d="M26.805 23.05v30.78h143.64V23.05H26.805zM16.545 2.53h164.16a10.26 10.26 0 0 1 10.26 10.26v51.3a10.26 10.26 0 0 1-10.26 10.26H16.545a10.26 10.26 0 0 1-10.26-10.26V12.79a10.26 10.26 0 0 1 10.26-10.26zm20.52 92.34h61.56a10.26 10.26 0 0 1 10.26 10.26v30.78h10.26v61.56h-41.04v-61.56h10.26v-20.52H26.805a10.26 10.26 0 0 1-10.26-10.26v-20.52h20.52v10.26zm120.37 17.77 18.14-18.14 18.14 18.14a25.65 25.65 0 1 1-36.279 0z"/>
                 </svg>
             </div>
-
-
         </div>
-        <div id="color-list">
 
+        <div id="color-list">
+            <label id="foreground-color-picker-label" class="color-picker-label">
+                <input type=color id="foreground-color-picker" class="color-picker">
+            </label>
         </div>
         <div id="canvas">
 
