@@ -1,5 +1,8 @@
+// constants:
+const dimension=5;
+
 // colors
-const backgroundDefaultColor = "#ffffff";
+const backgroundDefaultColor = "#EEEEEE";
 const foregroundDefaultColor = "#000000";
 
 // element declarations:
@@ -7,6 +10,7 @@ let foregroundColorPicker;
 let foregroundColorPickerLabel;
 let backgroundColorPicker;
 let backgroundColorPickerLabel;
+let canvas;
 
 
 function findElements() {
@@ -28,6 +32,15 @@ function initializePage() {
     });
     backgroundColorPicker.value = backgroundDefaultColor;
     backgroundColorPickerLabel.style.backgroundColor = backgroundDefaultColor;
+
+    canvas = document.querySelector("#canvas");
+    canvas.style.gridTemplateColumns = `repeat(${dimension}, 1fr)`;
+    canvas.style.gridTemplateRows = `repeat(${dimension}, 1fr)`;
+    for (let i = 0; i < dimension * dimension; i++) {
+        let newBlock = document.createElement("div");
+        newBlock.style.backgroundColor = backgroundColorPicker.value;
+        canvas.appendChild(newBlock);
+    } 
 }
 
 findElements();
