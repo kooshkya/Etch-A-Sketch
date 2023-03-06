@@ -55,9 +55,11 @@ svg {
 #stage {
     flex-grow: 1;
 
-    display: flex;
-    justify-content: center;
-    padding: 0 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 2fr;
+    justify-items: center;
+
+    padding: 0 10vw;
 }
 
 #tool-list {
@@ -101,7 +103,6 @@ svg {
 #canvas {
     display: grid;
     align-self: center;
-    margin: 0 5em;
 
     width: 30em;
     height: 30em;
