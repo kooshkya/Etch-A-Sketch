@@ -4,6 +4,8 @@
     --svg-button-fill-light: rgb(0, 0, 0);
     --svg-button-stroke-light: black;
     --header-light-background: rgb(170, 170, 170);
+    --slider-track-background: grey;
+    --slider-thumb-background: red;
 }
 
 html {
@@ -106,4 +108,38 @@ svg {
 
     width: 30em;
     height: 30em;
+}
+
+#scale-tool {
+    width: 100%;
+    align-self: center;
+}
+
+.slide-container {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 1em;
+    background-color: var(--slider-track-background);
+    outline: none;
+    opacity: 0.7;
+    border-radius: 1em;
+}
+
+.slider:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20%;
+    height: 2em;
+    background-color: var(--slider-thumb-background);
+    cursor: pointer;
 }
