@@ -58,10 +58,10 @@ svg {
     flex-grow: 1;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 6fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 4fr 3fr;
     justify-items: center;
 
-    padding: 0 10vw;
+    padding: 0 2vw;
 }
 
 #tool-list {
@@ -116,7 +116,8 @@ svg {
 }
 
 .slide-container {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .slider {
