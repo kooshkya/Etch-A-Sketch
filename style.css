@@ -6,6 +6,8 @@
     --header-light-background: rgb(170, 170, 170);
     --slider-track-background: grey;
     --slider-thumb-background: red;
+    --slider-button-background: rgb(0, 189, 0);
+    --slider-button-foreground: white;
 }
 
 html {
@@ -20,6 +22,10 @@ body {
 
     display: flex;
     flex-direction: column;
+}
+
+button {
+    cursor: pointer;
 }
 
 header {
@@ -115,9 +121,38 @@ svg {
     align-self: center;
 }
 
+.slide-panel {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "slider slider"
+        "text-box button";
+    grid-row-gap: 10px;
+}
+
+.slider-text {
+    grid-area: text-box;
+    justify-self: center;
+    align-self: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+.slider-button {
+    grid-area: button;
+    width: 60%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    background-color: var(--slider-button-background);
+    color: var(--slider-button-foreground);
+    font-size: 1.2em;
+}
+
 .slide-container {
-    width: 80%;
-    margin: 0 auto;
+    grid-area: slider;
+    width: 100%;
+    justify-self: center;
 }
 
 .slider {
